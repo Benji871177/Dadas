@@ -255,28 +255,28 @@ export default function App() {
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-xl p-4"
             id="age-gate-container"
           >
-            <div className="max-w-md w-full bg-brand-black-900 border border-brand-gold-500/20 rounded-2xl p-8 md:p-10 text-center relative overflow-hidden shadow-2xl shadow-brand-gold-950/40">
+            <div className="max-w-md w-full bg-brand-black-900 border border-brand-green-500/30 rounded-2xl p-8 md:p-10 text-center relative overflow-hidden shadow-2xl shadow-brand-green-950/40">
               {/* Background elegant dust */}
-              <div className="absolute -top-24 -left-24 w-48 h-48 bg-brand-gold-500/10 rounded-full blur-3xl pointer-events-none" />
-              <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-brand-gold-500/5 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute -top-24 -left-24 w-48 h-48 bg-brand-green-500/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-brand-green-500/5 rounded-full blur-3xl pointer-events-none" />
 
               <div className="relative z-10">
                 {/* Brand Logo inside Age Gate */}
-                <div className="relative w-24 h-24 mx-auto mb-6 rounded-full border border-brand-gold-500/30 overflow-hidden bg-brand-black-950 p-1 flex items-center justify-center shadow-lg shadow-brand-gold-950/50">
+                <div className="relative w-24 h-24 mx-auto mb-6 rounded-full border border-brand-green-500/30 overflow-hidden bg-brand-black-950 p-1 flex items-center justify-center shadow-lg shadow-brand-green-950/50">
                   <img src={BRAND_LOGO} alt="Dada's Dispensary Logo" className="w-full h-full object-cover rounded-full filter brightness-95 contrast-110" referrerPolicy="no-referrer" />
                 </div>
-                <span className="inline-block text-2xl font-serif tracking-[0.25em] text-brand-gold-400 mb-2">DADA’S</span>
-                <div className="h-[1px] w-12 bg-brand-gold-500/30 mx-auto mb-6" />
+                <span className="inline-block text-2xl font-serif tracking-[0.25em] text-brand-green-400 mb-2">DADA’S</span>
+                <div className="h-[1px] w-12 bg-brand-green-500/30 mx-auto mb-6" />
 
                 <h2 className="text-3xl font-serif text-white tracking-wide mb-3">VERIFY YOUR AGE</h2>
                 <p className="text-neutral-400 text-sm leading-relaxed mb-8">
-                  You must be <span className="text-brand-gold-400 font-medium font-mono">18 years or older</span> to access the Dada’s Dispensary digital collection, exclusive strain drops, and members-only circles.
+                  You must be <span className="text-brand-green-400 font-medium font-mono">18 years or older</span> to access the Dada’s Dispensary digital collection, exclusive strain drops, and members-only circles.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
                   <button
                     onClick={() => verifyAge(true)}
-                    className="flex-1 py-3.5 bg-brand-gold-500 hover:bg-brand-gold-400 text-brand-black-950 font-serif font-semibold tracking-wider rounded-xl transition duration-300 transform active:scale-[0.98] focus:outline-none focus:ring-1 focus:ring-brand-gold-500"
+                    className="flex-1 py-3.5 bg-brand-green-600 hover:bg-brand-green-500 text-white font-serif font-semibold tracking-wider rounded-xl transition duration-300 transform active:scale-[0.98] focus:outline-none focus:ring-1 focus:ring-brand-green-500 cursor-pointer shadow-lg shadow-brand-green-900/10"
                     id="age-gate-yes"
                   >
                     I AM 18 OR OLDER
@@ -291,7 +291,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-center justify-center gap-2 text-[10px] text-neutral-500 tracking-wider">
-                  <Lock className="w-3 h-3" />
+                  <Lock className="w-3 h-3 text-brand-green-500/70" />
                   <span>SECURE DISPENSARY COMPLIANCE</span>
                 </div>
               </div>
@@ -352,66 +352,66 @@ export default function App() {
                 <a 
                   href="#home" 
                   onClick={(e) => scrollToSection(e, 'home')}
-                  className={`hover:text-brand-gold-400 transition duration-300 relative ${activeSection === 'home' ? 'text-brand-gold-400' : 'text-neutral-400'}`}
+                  className={`hover:text-brand-green-400 transition duration-300 relative ${activeSection === 'home' ? 'text-brand-green-400 font-semibold' : 'text-neutral-400'}`}
                 >
                   HOME
-                  {activeSection === 'home' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1px] bg-brand-gold-500" />}
+                  {activeSection === 'home' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1.5px] bg-brand-green-500 shadow-[0_0_8px_rgba(69,171,77,0.6)]" />}
                 </a>
                 <a 
                   href="#story" 
                   onClick={(e) => scrollToSection(e, 'story')}
-                  className={`hover:text-brand-gold-400 transition duration-300 relative ${activeSection === 'story' ? 'text-brand-gold-400' : 'text-neutral-400'}`}
+                  className={`hover:text-brand-green-400 transition duration-300 relative ${activeSection === 'story' ? 'text-brand-green-400 font-semibold' : 'text-neutral-400'}`}
                 >
                   STORY
-                  {activeSection === 'story' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1px] bg-brand-gold-500" />}
+                  {activeSection === 'story' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1.5px] bg-brand-green-500 shadow-[0_0_8px_rgba(69,171,77,0.6)]" />}
                 </a>
                 <a 
                   href="#about" 
                   onClick={(e) => scrollToSection(e, 'about')}
-                  className={`hover:text-brand-gold-400 transition duration-300 relative ${activeSection === 'about' ? 'text-brand-gold-400' : 'text-neutral-400'}`}
+                  className={`hover:text-brand-green-400 transition duration-300 relative ${activeSection === 'about' ? 'text-brand-green-400 font-semibold' : 'text-neutral-400'}`}
                 >
                   ABOUT US
-                  {activeSection === 'about' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1px] bg-brand-gold-500" />}
+                  {activeSection === 'about' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1.5px] bg-brand-green-500 shadow-[0_0_8px_rgba(69,171,77,0.6)]" />}
                 </a>
                 <a 
                   href="#categories" 
                   onClick={(e) => scrollToSection(e, 'categories')}
-                  className={`hover:text-brand-gold-400 transition duration-300 relative ${activeSection === 'categories' ? 'text-brand-gold-400' : 'text-neutral-400'}`}
+                  className={`hover:text-brand-green-400 transition duration-300 relative ${activeSection === 'categories' ? 'text-brand-green-400 font-semibold' : 'text-neutral-400'}`}
                 >
                   CATEGORIES
-                  {activeSection === 'categories' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1px] bg-brand-gold-500" />}
+                  {activeSection === 'categories' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1.5px] bg-brand-green-500 shadow-[0_0_8px_rgba(69,171,77,0.6)]" />}
                 </a>
                 <a 
                   href="#strains" 
                   onClick={(e) => scrollToSection(e, 'strains')}
-                  className={`hover:text-brand-gold-400 transition duration-300 relative ${activeSection === 'strains' ? 'text-brand-gold-400' : 'text-neutral-400'}`}
+                  className={`hover:text-brand-green-400 transition duration-300 relative ${activeSection === 'strains' ? 'text-brand-green-400 font-semibold' : 'text-neutral-400'}`}
                 >
                   CURATED STRAINS
-                  {activeSection === 'strains' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1px] bg-brand-gold-500" />}
+                  {activeSection === 'strains' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1.5px] bg-brand-green-500 shadow-[0_0_8px_rgba(69,171,77,0.6)]" />}
                 </a>
                 <a 
                   href="#circle" 
                   onClick={(e) => scrollToSection(e, 'circle')}
-                  className={`hover:text-brand-gold-400 transition duration-300 relative ${activeSection === 'circle' ? 'text-brand-gold-400' : 'text-neutral-400'}`}
+                  className={`hover:text-brand-green-400 transition duration-300 relative ${activeSection === 'circle' ? 'text-brand-green-400 font-semibold' : 'text-neutral-400'}`}
                 >
                   DADA CIRCLE
-                  {activeSection === 'circle' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1px] bg-brand-gold-500" />}
+                  {activeSection === 'circle' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1.5px] bg-brand-green-500 shadow-[0_0_8px_rgba(69,171,77,0.6)]" />}
                 </a>
                 <a 
                   href="#trust" 
                   onClick={(e) => scrollToSection(e, 'trust')}
-                  className={`hover:text-brand-gold-400 transition duration-300 relative ${activeSection === 'trust' ? 'text-brand-gold-400' : 'text-neutral-400'}`}
+                  className={`hover:text-brand-green-400 transition duration-300 relative ${activeSection === 'trust' ? 'text-brand-green-400 font-semibold' : 'text-neutral-400'}`}
                 >
                   RESPONSIBILITY
-                  {activeSection === 'trust' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1px] bg-brand-gold-500" />}
+                  {activeSection === 'trust' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1.5px] bg-brand-green-500 shadow-[0_0_8px_rgba(69,171,77,0.6)]" />}
                 </a>
                 <a 
                   href="#contact" 
                   onClick={(e) => scrollToSection(e, 'contact')}
-                  className={`hover:text-brand-gold-400 transition duration-300 relative ${activeSection === 'contact' ? 'text-brand-gold-400' : 'text-neutral-400'}`}
+                  className={`hover:text-brand-green-400 transition duration-300 relative ${activeSection === 'contact' ? 'text-brand-green-400 font-semibold' : 'text-neutral-400'}`}
                 >
                   CONTACT
-                  {activeSection === 'contact' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1px] bg-brand-gold-500" />}
+                  {activeSection === 'contact' && <motion.div layoutId="navIndicator" className="absolute -bottom-1 left-0 right-0 h-[1.5px] bg-brand-green-500 shadow-[0_0_8px_rgba(69,171,77,0.6)]" />}
                 </a>
               </div>
 
@@ -680,6 +680,147 @@ export default function App() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </section>
+
+          {/* FEATURED CANNABIS PRODUCTS ON THE HOMEPAGE */}
+          <section className="py-24 bg-brand-black-900 border-t border-brand-green-500/10 relative z-10" id="home-featured-drops">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <div className="inline-flex items-center gap-1.5 mb-3 px-3 py-1 rounded-full bg-brand-green-500/5 border border-brand-green-500/15 text-brand-green-400 text-[10px] tracking-[0.25em] font-serif uppercase">
+                  <Sparkles className="w-2.5 h-2.5 text-brand-green-400 animate-pulse" />
+                  <span>HOT HARVEST FEATURE</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-serif text-white tracking-wide uppercase">CRAFT DISPENSARY SHIFT</h2>
+                <div className="h-[2px] w-16 bg-gradient-to-r from-brand-green-500 to-brand-gold-500 mx-auto mt-4 mb-3" />
+                <p className="text-neutral-400 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
+                  Discreet door-to-door escort of organic, pesticide-free lineages and pure live rosin edibles. Select a drop to view specs or reserve immediately.
+                </p>
+              </div>
+
+              {/* Featured Products Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {PRODUCTS.slice(0, 3).map((p) => (
+                  <div 
+                    key={`home-featured-${p.id}`}
+                    className="bg-brand-black-950 border border-neutral-900/80 hover:border-brand-green-500/30 rounded-2xl p-5 relative overflow-hidden transition-all duration-300 flex flex-col justify-between group h-full shadow-lg hover:shadow-brand-green-950/5"
+                    id={`home-product-card-${p.id}`}
+                  >
+                    {/* RARE DROP / COLLECTOR badge */}
+                    {p.isCollectorDrop && (
+                      <span className="absolute top-4 right-4 z-10 px-2 py-0.5 bg-brand-green-500 text-brand-black-950 font-mono text-[9px] font-bold tracking-widest rounded uppercase">
+                        RARE HARVEST
+                      </span>
+                    )}
+
+                    <div>
+                      {/* Image container */}
+                      <div 
+                        onClick={() => setSelectedProduct(p)}
+                        className="relative overflow-hidden rounded-xl bg-brand-black-900 border border-neutral-900 cursor-pointer aspect-video mb-5"
+                      >
+                        <img 
+                          src={p.image} 
+                          alt={p.name} 
+                          className="w-full h-full object-cover filter brightness-75 saturate-[0.85] group-hover:scale-105 transition duration-500"
+                          referrerPolicy="no-referrer"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-black-950/60 to-transparent" />
+                        <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none">
+                          <span className="text-[10px] font-mono text-brand-green-400 tracking-wider font-semibold">
+                            THC: {p.thc}
+                          </span>
+                          {p.cbd && (
+                            <span className="text-[10px] font-mono text-neutral-400 tracking-wider">
+                              CBD: {p.cbd}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Type Header */}
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-[10px] text-neutral-500 font-mono tracking-widest uppercase">
+                          {p.category}
+                        </span>
+                        <span className={`text-[9px] px-2 py-0.5 rounded font-mono ${
+                          p.type === 'Sativa' ? 'bg-orange-950/40 text-orange-400 border border-orange-500/20' :
+                          p.type === 'Indica' ? 'bg-indigo-950/40 text-indigo-400 border border-indigo-500/20' :
+                          p.type === 'Hybrid' ? 'bg-purple-950/40 text-purple-400 border border-purple-500/20' :
+                          'bg-brand-green-950/40 text-brand-green-400 border border-brand-green-500/20'
+                        }`}>
+                          {p.type}
+                        </span>
+                      </div>
+
+                      {/* Title */}
+                      <h3 
+                        onClick={() => setSelectedProduct(p)}
+                        className="text-lg font-serif text-white tracking-wide mb-2 hover:text-brand-green-400 cursor-pointer transition duration-300 uppercase"
+                      >
+                        {p.name}
+                      </h3>
+
+                      {p.strainLineage && (
+                        <div className="text-[10px] text-brand-green-400/85 font-mono tracking-widest uppercase mb-3 flex items-center gap-1">
+                          <span>🧬</span> <span>{p.strainLineage}</span>
+                        </div>
+                      )}
+
+                      <p className="text-neutral-400 text-xs font-light leading-relaxed mb-5 line-clamp-3">
+                        {p.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-1.5 mb-6">
+                        {p.effects.map((eff, i) => (
+                          <span key={i} className="text-[9px] px-2 py-0.5 bg-brand-black-900 text-neutral-400 border border-neutral-800/80 rounded">
+                            {eff}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Bottom section with pricing & buy */}
+                    <div className="pt-4 border-t border-neutral-900/80 flex items-center justify-between mt-auto">
+                      <div>
+                        <span className="text-[9px] text-neutral-500 font-mono block uppercase">Price ({p.weight})</span>
+                        <span className="text-lg font-mono text-brand-green-400 font-bold">R {p.price * 10}</span>
+                      </div>
+                      
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => setSelectedProduct(p)}
+                          className="px-3 py-2 rounded-lg bg-brand-black-900 text-neutral-400 hover:text-white border border-neutral-800 hover:border-brand-green-500/50 text-[10px] tracking-widest font-serif uppercase transition duration-300"
+                          id={`home-product-specs-btn-${p.id}`}
+                        >
+                          SPECS
+                        </button>
+                        <button
+                          onClick={() => addToCart(p)}
+                          className="px-3.5 py-2 rounded-lg bg-brand-green-600 hover:bg-brand-green-500 text-white text-[10px] font-serif font-bold tracking-widest uppercase transition duration-300 flex items-center gap-1.5 transform active:scale-95 shadow-md shadow-brand-green-900/10"
+                          id={`home-product-add-btn-${p.id}`}
+                        >
+                          <ShoppingBag className="w-3.5 h-3.5" />
+                          <span>RESERVE</span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                ))}
+              </div>
+
+              {/* View Full Catalog Call to Action */}
+              <div className="text-center mt-12">
+                <button
+                  onClick={() => setActiveSection('strains')}
+                  className="inline-flex items-center gap-2.5 px-6 py-3 border border-brand-green-500/30 hover:border-brand-green-500 text-brand-green-400 hover:text-white rounded-xl text-xs font-serif font-semibold tracking-widest uppercase bg-brand-black-950 hover:bg-brand-black-900 transition duration-300 cursor-pointer shadow-lg shadow-brand-green-950/10"
+                  id="home-view-all-cta"
+                >
+                  <span>EXPLORE FULL HARVEST CATALOGUE</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
               </div>
             </div>
           </section>

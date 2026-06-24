@@ -2,35 +2,35 @@ import { Product, Testimonial } from './types';
 
 export const BRAND_LOGO = 'https://i.postimg.cc/C5hHQntH/FB-IMG-1782285641126.jpg';
 
-export const HERO_BG = '/src/assets/images/dadas_hero_bg_1782286522193.jpg';
+export const HERO_BG = 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=1800&q=80';
 
 export const CATEGORIES = [
   {
     id: 'flower' as const,
     name: 'Curated Flower',
     description: 'Sought-after genetics, cold-cured and hand-trimmed to absolute perfection.',
-    image: '/src/assets/images/category_flower_1782286540127.jpg',
+    image: 'https://images.unsplash.com/photo-1603909223429-69bb7101f420?auto=format&fit=crop&w=1200&q=80',
     tagline: 'The Apex of Cultivation'
   },
   {
     id: 'edible' as const,
     name: 'Artisanal Edibles',
     description: 'Gourmet delicacies infused with clean, single-source live rosin.',
-    image: '/src/assets/images/category_edible_1782286554316.jpg',
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&q=80',
     tagline: 'Gastronomy & Elevation'
   },
   {
     id: 'vape' as const,
     name: 'Bespoke Vapes',
     description: 'Full-spectrum liquid diamonds inside custom gold-plated ceramic cartridges.',
-    image: '/src/assets/images/category_vape_1782286567254.jpg',
+    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
     tagline: 'Discreet and Sophisticated'
   },
   {
     id: 'oil' as const,
     name: 'Restorative Elixirs',
     description: 'Cold-pressed high-potency sublingual tinctures for exact, daily dosing.',
-    image: '/src/assets/images/category_oil_1782286580240.jpg',
+    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1200&q=80',
     tagline: 'Wellness with Precision'
   }
 ];
@@ -71,7 +71,7 @@ export const PRODUCTS: Product[] = [
     weight: '3.5g',
     effects: ['Euphoric Uplift', 'Full-Body Ease', 'Inspired Focus'],
     description: 'Our signature private reserve strain. A masterfully bred cross between Jealousy and White Truffle, slow-cured in dark glass jars for 60 days. Extremely dense buds glistening with golden amber trichomes and releasing a sweet, heavy dessert gas aroma.',
-    image: '/src/assets/images/category_flower_1782286540127.jpg',
+    image: 'https://images.unsplash.com/photo-1603909223429-69bb7101f420?auto=format&fit=crop&w=1200&q=80',
     strainLineage: 'Jealousy x White Truffle',
     isCollectorDrop: true
   },
@@ -87,7 +87,7 @@ export const PRODUCTS: Product[] = [
     weight: '3.5g',
     effects: ['Deep Sedation', 'Stress Relief', 'Dreamy Tranquility'],
     description: 'An premium nighttime selection featuring deeply purple, violet-hued calyxes covered in dense silver frost. Delivers a heavy grape-must and diesel flavor. Perfect for tranquil evenings and restoring alignment in body and mind.',
-    image: '/src/assets/images/category_flower_1782286540127.jpg',
+    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=1200&q=80',
     strainLineage: 'Grandaddy Purp x Kush Mints'
   },
   {
@@ -102,7 +102,7 @@ export const PRODUCTS: Product[] = [
     weight: '3.5g',
     effects: ['Sensory Heightening', 'Clean Clarity', 'Social Radiance'],
     description: 'A crisp, pine-fresh daytime Sativa with rapid cerebral activation. Grown strictly in organic soil, it offers subtle citrus blossoms and mint undertones. Fosters long-term mental stamina and a vibrant aesthetic sense.',
-    image: '/src/assets/images/category_flower_1782286540127.jpg',
+    image: 'https://images.unsplash.com/photo-1536846840956-dfd85fa97e25?auto=format&fit=crop&w=1200&q=80',
     strainLineage: 'Ghost OG x Super Silver Haze'
   },
   {
@@ -116,7 +116,7 @@ export const PRODUCTS: Product[] = [
     weight: '10-Pack (100mg)',
     effects: ['Harmonious Warmth', 'Social Ease', 'Sensory Delight'],
     description: 'Gourmet single-origin Belgian dark chocolates, infused with premium, solventless live rosin hash. Hand-painted with edible 24-karat gold leaf flakes. Offers a precise, balanced, and elegant body relaxation accompanied by sweet flavor profiles.',
-    image: '/src/assets/images/category_edible_1782286554316.jpg',
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&q=80',
     isCollectorDrop: true
   },
   {
@@ -131,7 +131,7 @@ export const PRODUCTS: Product[] = [
     weight: '1.0g',
     effects: ['Electric Focus', 'Elevated Creativity', 'Discreet Relief'],
     description: '100% pure full-spectrum liquid diamonds extracted from fresh-frozen crop. Housed in a proprietary medical-grade glass and 24-karat gold plated heating core, ensuring perfectly tempered draws with no combustion taste.',
-    image: '/src/assets/images/category_vape_1782286567254.jpg'
+    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80'
   },
   {
     id: 'obelisk-elixir',
@@ -144,7 +144,7 @@ export const PRODUCTS: Product[] = [
     weight: '30ml',
     effects: ['Anti-Inflammatory', 'Mental Stillness', 'Somatic Balance'],
     description: 'A high-potency restorative elixir, combining cold-pressed hemp oil, organic avocado seed lipids, and fractionated coconut oil. Scented with wild mountain peppermint, designed to soothe inflammation, physical stress, and foster a peaceful focus.',
-    image: '/src/assets/images/category_oil_1782286580240.jpg'
+    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1200&q=80'
   }
 ];
 

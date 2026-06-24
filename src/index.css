@@ -20,6 +20,19 @@
   --color-brand-gold-900: #3c2411;
   --color-brand-gold-950: #201207;
 
+  /* Custom Premium Cannabis Green Palette */
+  --color-brand-green-50: #f3faf4;
+  --color-brand-green-100: #e3f5e5;
+  --color-brand-green-200: #c9ebcc;
+  --color-brand-green-300: #a0dca5;
+  --color-brand-green-400: #6fc676;
+  --color-brand-green-500: #45ab4d; /* Primary Botanical Green */
+  --color-brand-green-600: #338a39;
+  --color-brand-green-700: #2b6e2f;
+  --color-brand-green-800: #26572a;
+  --color-brand-green-900: #204823;
+  --color-brand-green-950: #0e2510;
+
   /* Deep Luxury Blacks */
   --color-brand-black-50: #f6f6f6;
   --color-brand-black-100: #e7e7e7;
@@ -67,12 +80,24 @@
   text-shadow: 0 0 10px rgba(184, 134, 59, 0.4);
 }
 
+.green-glow {
+  text-shadow: 0 0 12px rgba(69, 171, 77, 0.5);
+}
+
 .gold-border-glow {
   box-shadow: 0 0 15px rgba(184, 134, 59, 0.1);
 }
 
+.green-border-glow {
+  box-shadow: 0 0 20px rgba(69, 171, 77, 0.15);
+}
+
 .gold-gradient-bg {
   background: linear-gradient(135deg, #c9a059 0%, #b8863b 50%, #7b5123 100%);
+}
+
+.green-gradient-bg {
+  background: linear-gradient(135deg, #6fc676 0%, #45ab4d 50%, #26572a 100%);
 }
 
 .dark-gradient-bg {
