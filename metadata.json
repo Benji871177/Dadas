@@ -1,0 +1,6 @@
+{
+  "name": "Dada's Dispensary",
+  "description": "A premium luxury cannabis brand and boutique dispensary featuring curated strains, artisanal products, and the private Dada Circle access experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
